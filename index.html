@@ -215,7 +215,7 @@
       position: relative;
       z-index: 5;
       display: grid;
-      grid-template-columns: 1.3fr 1fr 1fr auto;
+      grid-template-columns: 1.25fr 1fr 1fr 1fr;
       gap: 12px;
       padding: 18px;
       background: var(--white);
@@ -245,6 +245,10 @@
       border: 1px solid transparent;
       border-radius: 8px;
       outline: none;
+    }
+
+    .booking-panel .button {
+      grid-column: 1 / -1;
     }
 
     .section {
@@ -730,6 +734,10 @@
             <option>中大型犬洗护</option>
             <option>造型修剪</option>
           </select>
+        </div>
+        <div class="field">
+          <label for="customer">预约用户名称</label>
+          <input id="customer" name="customer" type="text" autocomplete="name" placeholder="填写联系人姓名" />
         </div>
         <div class="field">
           <label for="date">预约日期</label>
